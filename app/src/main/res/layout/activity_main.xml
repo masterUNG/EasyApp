@@ -15,10 +15,24 @@
         android:background="@color/colorPrimary"
         android:id="@+id/toolbarMain"/>
 
-    <!--Content Fragment-->
-    <FrameLayout
-        android:id="@+id/contentFragmentMain"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent">
+
+        <!--WallPaper-->
+        <ImageView
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!--Content Fragment-->
+        <FrameLayout
+            android:id="@+id/contentFragmentMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
 
 </LinearLayout>
