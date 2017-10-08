@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
                     .commit();
         }
 
+
 //        For Choose Image Menu
         if (item.getItemId() == R.id.itemChooseImage) {
             getSupportFragmentManager().beginTransaction()
