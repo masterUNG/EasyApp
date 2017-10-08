@@ -52,7 +52,14 @@ public class MainFragment extends Fragment{
             @Override
             public void onClick(View v) {
 
+                if (indexAnInt < imageInts.length) {
+                    //Todo
+                    indexAnInt += 1;
+                } else {
+                    indexAnInt = 0;
+                }
 
+                imageView.setImageResource(imageInts[indexAnInt]);
 
             }   // onClick
         });
