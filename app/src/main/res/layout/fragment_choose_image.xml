@@ -29,8 +29,8 @@
             android:layout_height="@dimen/icon" />
 
         <!--Button-->
-        <Button
-            android:text="Choose Image"
+        <ImageView
+            android:src="@drawable/button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
