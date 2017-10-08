@@ -49,6 +49,25 @@ public class MainFragment extends Fragment{
 //        Decrease Controller
         decreaseController();
 
+//        GoToChoose Controller
+        goToChoose();
+    }
+
+    private void goToChoose() {
+        Button button = getView().findViewById(R.id.btnGoToChoose);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                //Replace Fragment
+                getActivity().getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.contentFragmentMain, new ChooseImageFragment())
+                        .addToBackStack(null)
+                        .commit();
+
+            }
+        });
     }
 
     private void decreaseController() {

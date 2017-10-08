@@ -61,6 +61,15 @@
 
         </LinearLayout>
 
+        <Button
+            android:id="@+id/btnGoToChoose"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:text="Go To Choose Image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
     </LinearLayout>
 
 </RelativeLayout>
