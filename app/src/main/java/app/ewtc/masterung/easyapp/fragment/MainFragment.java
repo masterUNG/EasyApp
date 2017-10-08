@@ -46,6 +46,23 @@ public class MainFragment extends Fragment{
 //        Increase Controller
         increaseController();
 
+//        Decrease Controller
+        decreaseController();
+
+    }
+
+    private void decreaseController() {
+        decButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (indexAnInt <= 0) {
+                    indexAnInt = imageInts.length - 1;
+                } else {
+                    indexAnInt -= 1;
+                }
+                imageView.setImageResource(imageInts[indexAnInt]);
+            }
+        });
     }
 
     private void increaseController() {
