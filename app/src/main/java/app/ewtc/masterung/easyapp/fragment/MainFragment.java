@@ -3,6 +3,7 @@ package app.ewtc.masterung.easyapp.fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -48,17 +49,21 @@ public class MainFragment extends Fragment{
     }
 
     private void increaseController() {
+
+        final String tag = "8octV1";
+
         incButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                if (indexAnInt < imageInts.length) {
+                Log.d(tag, "Length of Array ==> " + imageInts.length);
+                if (indexAnInt < imageInts.length-1) {
                     //Todo
                     indexAnInt += 1;
                 } else {
                     indexAnInt = 0;
                 }
-
+                Log.d(tag, "Current index ==> " + indexAnInt);
                 imageView.setImageResource(imageInts[indexAnInt]);
 
             }   // onClick
