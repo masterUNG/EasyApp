@@ -102,6 +102,8 @@
                 android:layout_height="wrap_content" />
 
             <TextView
+                android:clickable="true"
+                android:id="@+id/txtExit"
                 android:layout_gravity="center_vertical"
                 android:textColor="@color/colorPrimaryDark"
                 android:textStyle="bold"
