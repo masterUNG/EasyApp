@@ -4,6 +4,8 @@
 
     <!--Content-->
     <LinearLayout
+        android:padding="16dp"
+        android:background="#82ffffff"
         android:layout_margin="40dp"
         android:gravity="center_horizontal"
         android:orientation="vertical"
@@ -21,6 +23,7 @@
 
         <!--Image-->
         <ImageView
+            android:id="@+id/imvImage"
             android:layout_margin="15dp"
             android:src="@drawable/icon1"
             android:layout_width="@dimen/icon"
@@ -37,7 +40,7 @@
                 android:textStyle="bold"
                 android:textColor="@color/white"
                 android:background="@color/colorPrimary"
-                android:id="@+id/button"
+                android:id="@+id/btnDecrease"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -45,6 +48,7 @@
 
             <!--Increase-->
             <Button
+                android:id="@+id/btnIncrease"
                 android:layout_marginLeft="3dp"
                 android:textStyle="bold"
                 android:textColor="@color/white"
